@@ -9,10 +9,14 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create
-    properties:
-      hibernate:
-        format_sql: true
-
+    open-in-view: false
+#    properties:
+#      hibernate:
+#        format_sql: true
+#
 logging:
   level:
-    org.hibernate.SQL: debug
+    org.spingframework.jdbc.core:
+      JdbcTemplate: debug
+      StatementCreatorUtils: trace
+#    org.hibernate.SQL: debug

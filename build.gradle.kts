@@ -43,6 +43,7 @@ dependencies {
 	kapt("com.querydsl:querydsl-apt:5.0.0:jpa")
 
 	runtimeOnly("com.h2database:h2")
+	runtimeOnly("org.springframework.boot:spring-boot-devtools")
 
 	annotationProcessor("org.projectlombok:lombok")
 	annotationProcessor(group = "com.querydsl", name = "querydsl-apt", classifier = "jpa")
